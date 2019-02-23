@@ -1,0 +1,36 @@
+BERIKUT SAYA KASIH CODING MYSQL BAGI PEMULA MySQL 1
+
+- Cara memebuat database-
+mysql> CREATE DATABASE tugas01;
+
+-Perintah USE, digunakan untuk masuk kedalam database, atau berganti ke database lain-
+mysql> use tugas01;
+
+-Untuk melihat basis data yang ada pada server database MySQL, gunakan perintah-
+mysql> show databases;
+
+-Untuk menghapus database, gunakan perintah-
+mysql> DROP database tugas01;
+
+-Untuk membuat Tabel menggunakan perintah-
+ CREATE TABLE biodata(nama VARCHAR(50), alamat TEXT);
+ 
+-Untuk menampilkan struktur tabel yang sudah dibuat, gunakan perintah-
+mysql> desc biodata;
+
+-Untuk menambah field, gunakan perintah-
+mysql> ALTER TABLE biodata ADD COLUMN id int(10) FIRST;
+
+-Untuk mengubah nama field, gunakan perintah-
+mysql> ALTER TABLE biodata CHANGE alamat alamat_jalan VARCHAR(200);
+
+-Untuk mengubah tipe data, gunakan perintah-
+mysql> ALTER TABLE biodata MODIFY alamat_jalan TINYTEXT;
+
+-Untuk menghapus field, gunakan perintah-
+mysql> ALTER TABLE biodata DROP alamat_jalan;
+
+-Untuk menambah Index, gunakan perintah-
+mysql> ALTER TABLE biodata ADD PRIMARY KEY(id);
+
+SELESAI
